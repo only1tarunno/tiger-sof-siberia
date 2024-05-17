@@ -1,3 +1,4 @@
+import BottomFooter from "../../Components/Footer/BottomFooter";
 import Footer from "../../Components/Footer/Footer";
 import HomePageNav from "../../Components/Navbar/HomePageNav";
 import AboutUsSection from "./AboutUsSection";
@@ -18,6 +19,7 @@ const Home = () => {
       <Testimonial />
       <CTASection />
       <Footer />
+      <BottomFooter />
     </>
   );
 };

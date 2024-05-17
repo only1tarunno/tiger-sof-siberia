@@ -1,13 +1,12 @@
-import Container from "../Shared/Container";
 import { IoSearchOutline } from "react-icons/io5";
 import Links from "./Links";
+import Container from "../Shared/Container";
 import logo from "../../assets/logo-white.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const HomePageNav = () => {
+const FeaturePageNav = () => {
   return (
-    <div className="py-2">
-      {" "}
+    <div className="bg-[#232F3E] py-2">
       <Container>
         <div className="drawer relative z-50">
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -65,4 +64,4 @@ const HomePageNav = () => {
   );
 };
 
-export default HomePageNav;
+export default FeaturePageNav;

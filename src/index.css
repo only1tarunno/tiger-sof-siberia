@@ -16,3 +16,22 @@ body {
   background-color: transparent !important;
   color: #ff9900 !important;
 }
+#featureBanner {
+  position: relative;
+}
+#featureBanner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e8e8e8;
+  clip-path: polygon(0% 1%, 62% 1%, 64% 22%, 64% 26%, 61% 100%, 0% 100%);
+}
+
+@media (max-width: 768px) {
+  #featureBanner::after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}

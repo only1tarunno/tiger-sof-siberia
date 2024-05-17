@@ -4,10 +4,12 @@ import TestimonialTitle from "./TestimonialTitle";
 
 const Testimonial = () => {
   return (
-    <Container>
-      <TestimonialTitle />
-      <TestimonialBody />
-    </Container>
+    <div className="py-10 md:py-20">
+      <Container>
+        <TestimonialTitle />
+        <TestimonialBody />
+      </Container>
+    </div>
   );
 };
 

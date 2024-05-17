@@ -14,7 +14,7 @@ const Banner = () => {
           <h3 className="text-base font-light tracking-wider uppercase">
             Prefix describing what your business does will be here
           </h3>
-          <h1 className="mb-5 text-5xl font-medium leading-tight">
+          <h1 className="mb-5 text-4xl md:text-5xl font-medium leading-tight">
             We Will Write a Headline Highlighting Your Business
           </h1>
 

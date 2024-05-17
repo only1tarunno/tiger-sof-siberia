@@ -3,6 +3,7 @@
 @tailwind utilities;
 body {
   font-family: "lato", sans-serif;
+  background-color: #f2f2f2;
 }
 .menu {
   gap: 15px;

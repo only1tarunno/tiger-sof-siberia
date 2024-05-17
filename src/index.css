@@ -4,3 +4,14 @@
 body {
   font-family: "lato", sans-serif;
 }
+.menu {
+  gap: 15px;
+}
+.menu li a {
+  text-transform: uppercase;
+  padding: 0;
+}
+.active {
+  background-color: transparent !important;
+  color: #ff9900 !important;
+}

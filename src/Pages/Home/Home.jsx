@@ -6,6 +6,7 @@ import Banner from "./Banner";
 import BlogCards from "./BlogCards";
 import CTASection from "./CTASection";
 import Ribon from "./Ribon";
+import Statistics from "./Statistics";
 import Testimonial from "./Testimonial";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <AboutUsSection />
       <BlogCards />
       <Ribon />
+      <Statistics />
       <Testimonial />
       <CTASection />
       <Footer />

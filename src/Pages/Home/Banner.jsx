@@ -10,11 +10,11 @@ const Banner = () => {
     >
       <div className="hero-overlay bg-black bg-opacity-80"></div>
       <div className="hero-content text-center text-white">
-        <div className="max-w-[540px]">
+        <div className="max-w-[540px] space-y-7">
           <h3 className="text-base font-light tracking-wider uppercase">
             Prefix describing what your business does will be here
           </h3>
-          <h1 className="mb-5 text-4xl md:text-5xl font-medium leading-tight">
+          <h1 className="mb-5 text-4xl md:text-[48px] font-medium leading-tight">
             We Will Write a Headline Highlighting Your Business
           </h1>
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bannerImg from "../../assets/banner.jpg";
 
 const Banner = () => {
@@ -18,9 +19,12 @@ const Banner = () => {
             We Will Write a Headline Highlighting Your Business
           </h1>
 
-          <button className="btn bg-[#232F3E] border border-[#FF9900] text-white uppercase rounded hover:bg-[#151c25]">
+          <Link
+            to="/feature"
+            className="btn bg-[#232F3E] border border-[#FF9900] text-white uppercase rounded hover:bg-[#151c25]"
+          >
             Call to Action
-          </button>
+          </Link>
         </div>
       </div>
     </div>

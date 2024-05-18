@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import Container from "../../Components/Shared/Container";
 
 const FeatureBanner = () => {
+  const navigate = useNavigate();
+
   return (
     <div id="featureBanner">
       <Container>
@@ -10,12 +13,22 @@ const FeatureBanner = () => {
             <p>Job ID: 2544443 | ADCI - Karnataka</p>
           </div>
           <div className="hidden md:block w-72">
-            <button className="btn text-[#232F3E] border border-[#FF9900] bg-[#FF9900] uppercase rounded hover:bg-[#232F3E] hover:text-white hover:border-[#232F3E] w-full">
+            <button
+              onClick={() => {
+                navigate("/signUp");
+              }}
+              className="btn text-[#232F3E] border border-[#FF9900] bg-[#FF9900] uppercase rounded hover:bg-[#232F3E] hover:text-white hover:border-[#232F3E] w-full"
+            >
               Apply now
             </button>
           </div>
           <div className="md:hidden absolute left-1/2 -translate-x-1/2 -bottom-6 block w-72">
-            <button className="btn text-[#232F3E] border border-[#FF9900] bg-[#FF9900] uppercase rounded hover:bg-[#232F3E] hover:text-white hover:border-[#232F3E] w-full">
+            <button
+              onClick={() => {
+                navigate("/signUp");
+              }}
+              className="btn text-[#232F3E] border border-[#FF9900] bg-[#FF9900] uppercase rounded hover:bg-[#232F3E] hover:text-white hover:border-[#232F3E] w-full"
+            >
               Apply now
             </button>
           </div>

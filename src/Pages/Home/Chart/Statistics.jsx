@@ -1,6 +1,6 @@
-import Container from "../../Components/Shared/Container";
+import Container from "../../../Components/Shared/Container";
 import StatisticsTitle from "./StatisticsTitle";
-import ChartBar from "./Chart/ChartBar";
+import ChartBar from "./ChartBar";
 
 const Statistics = () => {
   return (

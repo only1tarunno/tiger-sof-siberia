@@ -1,4 +1,4 @@
-import Container from "../../Components/Shared/Container";
+import Container from "../../../Components/Shared/Container";
 import TestimonialBody from "./TestimonialBody";
 import TestimonialTitle from "./TestimonialTitle";
 

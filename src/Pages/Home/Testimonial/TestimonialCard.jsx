@@ -1,4 +1,4 @@
-import avatar from "../../assets/avatar.png";
+import avatar from "../../../assets/avatar.png";
 import { IoStarSharp } from "react-icons/io5";
 
 const TestimonialCard = () => {

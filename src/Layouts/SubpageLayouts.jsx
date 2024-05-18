@@ -1,6 +1,7 @@
 import SubPageNav from "../Components/Navbar/SubPageNav";
 import Footer from "../Components/Footer/Footer";
 import { Outlet } from "react-router-dom";
+import BottomFooter from "../Components/Footer/BottomFooter";
 
 const SubpageLayouts = () => {
   return (
@@ -8,6 +9,7 @@ const SubpageLayouts = () => {
       <SubPageNav />
       <Outlet />
       <Footer />
+      <BottomFooter />
     </>
   );
 };

@@ -5,9 +5,9 @@ import AboutUsSection from "./AboutUsSection";
 import Banner from "./Banner";
 import BlogCards from "./BlogCards";
 import CTASection from "./CTASection";
+import Statistics from "./Chart/Statistics";
 import Ribon from "./Ribon";
-import Statistics from "./Statistics";
-import Testimonial from "./Testimonial";
+import Testimonial from "./Testimonial/Testimonial";
 
 const Home = () => {
   return (

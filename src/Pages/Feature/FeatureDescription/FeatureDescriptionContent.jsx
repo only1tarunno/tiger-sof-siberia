@@ -18,19 +18,22 @@ const FeatureDescriptionContent = () => {
           great experiences for our customers is top priority. FOAA is seeking a
           Staff Accountant to support our accounting team.
         </p>
-        <p>
-          The responsibilities include month end closing activities, preparation
-          of monthly/quarterly/annually reconciliations and balance sheet
-          analysis. <br />
-          This position will support the Management in all aspects of financial
-          accounting, reporting systems, procedures, and policies. <br />
-          This position will also play an important role in promoting
-          systems/process development within department to ensure ongoing
-          efficiency and control improvements. <br />
-          The successful candidate will have a strong desire in innovating
-          processes and exceed expectations in a dynamic, fast-paced
-          environment. Knowledge & Skills/ Business Acumen/ Education &
-          Experience
+        <div>
+          <p>
+            The responsibilities include month end closing activities,
+            preparation of monthly/quarterly/annually reconciliations and
+            balance sheet analysis. <br />
+            This position will support the Management in all aspects of
+            financial accounting, reporting systems, procedures, and policies.{" "}
+            <br />
+            This position will also play an important role in promoting
+            systems/process development within department to ensure ongoing
+            efficiency and control improvements. <br />
+            The successful candidate will have a strong desire in innovating
+            processes and exceed expectations in a dynamic, fast-paced
+            environment. Knowledge & Skills/ Business Acumen/ Education &
+            Experience
+          </p>
           <ul>
             <li>
               · Must be a Certified Accountant with CA, ICWA, CIMA, CMA, CPA or
@@ -63,7 +66,7 @@ const FeatureDescriptionContent = () => {
             <li>· Strong team skills</li>
             <li>· Self motivated , enthusiastic and highly energetic</li>
           </ul>
-        </p>
+        </div>
         <p>
           We are open to hiring candidates to work out of one of the following
           locations:

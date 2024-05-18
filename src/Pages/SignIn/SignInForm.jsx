@@ -1,14 +1,36 @@
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import useAuth from "../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const SignInForm = () => {
   const [showpass, setshowpass] = useState(false);
-  const handleLogin = (e) => {
+  const { login } = useAuth();
+
+  const onSubmit = async (e) => {
     e.preventDefault();
+    const email = e?.target?.email.value;
+    const pass = e?.target?.pass?.value;
+    login(email, pass)
+      .then(() => {
+        Swal.fire({
+          icon: "success",
+          title: "User log in sucess",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch(() => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops",
+          text: "Invalid username or password",
+        });
+      });
   };
 
   return (
-    <form onSubmit={handleLogin} className="space-y-8">
+    <form onSubmit={onSubmit} className="space-y-8">
       <div className="space-y-2">
         <label htmlFor="email">Enter your email address</label>
         <input

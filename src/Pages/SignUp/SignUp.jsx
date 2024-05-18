@@ -8,13 +8,13 @@ const SignUp = () => {
     <div className="py-10">
       <Container>
         <div className="w-full md:w-1/2 2xl:w-2/5 mx-auto my-10 space-y-10">
-          <div className="text-center">
+          <div className="text-center space-y-2">
             <h2 className="text-4xl md:text-5xl font-medium">
               Create an account
             </h2>
             <p>
               Already have an account?{" "}
-              <Link to="/signin" className="underline">
+              <Link to="/sign-in" className="underline">
                 Log in
               </Link>
             </p>

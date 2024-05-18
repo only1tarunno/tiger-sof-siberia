@@ -1,1 +1,1 @@
-Liver Link: https://tiger-sof-siberia.vercel.app/
+Liver Link: https://only1tarunno-visabank.netlify.app/

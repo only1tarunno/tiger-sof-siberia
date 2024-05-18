@@ -3,8 +3,11 @@ import Links from "./Links";
 import Container from "../Shared/Container";
 import logo from "../../assets/logo-white.png";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
 
 const FeaturePageNav = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#232F3E] py-2">
       <Container>
@@ -14,7 +17,12 @@ const FeaturePageNav = () => {
             {/* Navbar */}
             <div className="w-full navbar">
               <div className="flex-1 px-2 mx-2">
-                <img src={logo} className="w-32 md:w-44" alt="Logo" />
+                <img
+                  onClick={() => navigate("/")}
+                  src={logo}
+                  className="w-32 md:w-44"
+                  alt="Logo"
+                />
               </div>
               <div className="flex-none lg:hidden">
                 <label

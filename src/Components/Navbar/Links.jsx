@@ -19,7 +19,7 @@ const Links = () => {
         <NavLink to="/about">about</NavLink>
       </li>
       <li>
-        <NavLink to="/getInvolved">Get Involved</NavLink>
+        <NavLink to="/signIn">Sign in</NavLink>
       </li>
     </>
   );

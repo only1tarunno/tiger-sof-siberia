@@ -12,7 +12,7 @@ const SignIn = () => {
             <h2 className="text-4xl md:text-5xl font-medium">Sign in</h2>
             <p>
               Don&apos;t have an account?{" "}
-              <Link to="/sign-up" className="underline">
+              <Link to="/signUp" className="underline">
                 Sign up
               </Link>
             </p>

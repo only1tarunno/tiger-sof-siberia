@@ -14,7 +14,7 @@ const SignUp = () => {
             </h2>
             <p>
               Already have an account?{" "}
-              <Link to="/sign-in" className="underline">
+              <Link to="/signIn" className="underline">
                 Log in
               </Link>
             </p>

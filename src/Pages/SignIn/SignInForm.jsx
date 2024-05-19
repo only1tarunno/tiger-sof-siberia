@@ -2,15 +2,21 @@ import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
+import { useForm } from "react-hook-form";
 
 const SignInForm = () => {
   const [showpass, setshowpass] = useState(false);
   const { login } = useAuth();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
   const onSubmit = async (e) => {
-    e.preventDefault();
-    const email = e?.target?.email.value;
-    const pass = e?.target?.pass?.value;
+    const email = e?.email;
+    const pass = e?.pass;
     login(email, pass)
       .then(() => {
         Swal.fire({
@@ -19,6 +25,7 @@ const SignInForm = () => {
           showConfirmButton: false,
           timer: 1500,
         });
+        reset();
       })
       .catch(() => {
         Swal.fire({
@@ -30,16 +37,25 @@ const SignInForm = () => {
   };
 
   return (
-    <form onSubmit={onSubmit} className="space-y-8">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
       <div className="space-y-2">
         <label htmlFor="email">Enter your email address</label>
         <input
           type="email"
           placeholder="abc@gmail.com"
-          name="email"
+          {...register("email", {
+            required: "Enter your email",
+          })}
           id="email"
-          className="w-full  p-3 rounded-lg focus:outline-none border bg-transparent border-[#e8e8e8] text-[#1e2835]"
+          className={`w-full  p-3 rounded-lg focus:outline-none border bg-transparent  text-[#1e2835]  ${
+            errors.email ? "border-red-500" : "border-[#e8e8e8]"
+          }`}
         />
+        {!!errors?.email && (
+          <div role="alert" className="text-red-600">
+            {errors?.email?.message}
+          </div>
+        )}
       </div>
       <div className="space-y-2">
         <label htmlFor="pass">Enter your password</label>
@@ -47,9 +63,13 @@ const SignInForm = () => {
           <input
             type={showpass ? "text" : "password"}
             placeholder="********"
-            name="pass"
+            {...register("pass", {
+              required: "Enter your password",
+            })}
             id="pass"
-            className="w-full p-3 rounded-lg focus:outline-none border bg-transparent border-[#e8e8e8] text-[#1e2835]"
+            className={`w-full  p-3 rounded-lg focus:outline-none border bg-transparent  text-[#1e2835]  ${
+              errors.pass ? "border-red-500" : "border-[#e8e8e8]"
+            }`}
           />
           <span
             onClick={() => setshowpass(!showpass)}
@@ -58,6 +78,11 @@ const SignInForm = () => {
             {showpass ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>}
           </span>
         </div>
+        {!!errors?.pass && (
+          <div role="alert" className="text-red-600">
+            {errors?.email?.message}
+          </div>
+        )}
       </div>
       <div className="space-y-2">
         <input

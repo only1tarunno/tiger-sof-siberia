@@ -83,7 +83,6 @@ const SignUpForm = () => {
           {...register("name", {
             required: "Name is Required",
           })}
-          name="name"
           id="name"
           className={`w-full  p-3 rounded-lg focus:outline-none border bg-transparent  text-[#1e2835]  ${
             errors.name ? "border-red-500" : "border-[#e8e8e8]"
@@ -103,7 +102,6 @@ const SignUpForm = () => {
           {...register("email", {
             required: "Email is Required",
           })}
-          name="email"
           id="email"
           className={`w-full  p-3 rounded-lg focus:outline-none border bg-transparent  text-[#1e2835]  ${
             errors.email ? "border-red-500" : "border-[#e8e8e8]"
